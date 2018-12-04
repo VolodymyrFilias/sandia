@@ -171,7 +171,8 @@ ul {
 
 .main-menu li {
   display: block;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .main-menu a {
   display: block;
@@ -187,7 +188,7 @@ ul {
   font-weight: bold;
   left: 95%;
   float: right;
-  z-index: 100; }
+  z-index: 1001; }
 
 .toggle-button:after {
   content: attr(data-open);
@@ -198,15 +199,12 @@ ul {
   display: block;
   position: absolute;
   z-index: 1000;
-  /* margin-top: 80px; */
-  margin-left: -20px;
   height: 100vh;
-  width: 100%; }
+  width: 50vw; }
 
 #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
   display: block;
-  content: attr(data-close);
-  margin-top: -80px; }
+  content: attr(data-close); }
 
 .about {
   background: #000;
