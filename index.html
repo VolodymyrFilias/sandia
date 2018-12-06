@@ -19,7 +19,7 @@
                 <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
             </div>
             <nav role="navigation">
-                <ul class="menu">
+                <ul class="top-line-menu">
                 <li><a href="#about">Послуги</a></li> 
                 <li><a href="#home">Про нас</a></li>
                 <li><a href="#expertise">Роботи</a></li>
@@ -51,20 +51,42 @@
 
     </div>
     <div class="header-right">
+        <div class="menu">
             <input type="checkbox" id="menu-checkbox">
             <nav role="navigation">
                 <label for="menu-checkbox" class="toggle-button"
                 data-open="≡" data-close="×" onclick></label>
-                <ul class="main-menu">
-                <li><a href="#home">HOME</a></li> 
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#expertise">EXPERTISE</a></li>
-                <li><a href="#teams">TEAMS</a></li>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#people_say">PEOPLE SAY</a></li>
-                <li><a href="#contact">CONTACT</a></li>   
-                </ul>
+                <div class="main-menu">
+                    <div class="opacity"></div>
+                    <div class="top-line-email">
+                        <div class="email">
+                            <a href="#">contacts@sandia.studio</a>
+                            <span> Для комерційних пропозицій</span>    
+                        </div>
+                        <div class="home_btn right">
+                            <a href="" class="btn">Почати роботу</a>   
+                        </div>
+                    </div>
+                   
+                    <ul class="middle-menu">
+                        <li><a href="#home">Головна</a></li> 
+                        <li><a href="#about">Послуга</a></li>
+                        <li><a href="#expertise">Про нас</a></li>
+                        <li><a href="#teams">Наші роботи</a></li>
+                        <li><a href="#works">Наші клієнти</a></li>
+                        <li><a href="#people_say">Контакти</a></li>
+                        <li><a href="#contact">Наш блог</a></li>
+                        <li><a href="#contact">Вакансії</a></li>    
+                    </ul>
+                    <ul class="down_menu">
+                        <li><a href="">Брендинг</a> |&nbsp;</li>
+                        <li> <a href="">Веб-сайти</a> |&nbsp;</li>
+                        <li> <a href="">Упаковання</a> |&nbsp;</li>
+                        <li> <a href="">Маркетинг</a></li>
+                    </ul>
+                </div>
             </nav>
+        </div>
         <div id="carouselExampleControls" class="carousel vert slide" data-ride="carousel" data-interval="false" >
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -173,7 +195,74 @@
             </div>
         </div>
     </section>
+
+    <section id="works" class="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                            <div class="head_title ">
+                                <h4>Останні проекти: </h4>
     
+                            </div>
+                        <div class="main_works_area sections ">
+                            <div class="row">
+                                <div class="col-sm-12 col-12">
+                                    <div class="single_works">
+                                            <img src="img/goods1.jpg" alt="" />
+                                    
+                                            <img src="img/cukor.jpg" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-12">
+                                    <div class="single_work">
+                                            <img src="img/goods2.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">                           
+                            <div class="col-sm-6">
+                                <h4>GIVE US A GOOD NEWS</h4>
+                                <div class="single_contant_left">
+                                    <form action="#" id="formid">
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="first name" required="">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                                        </div>
+    
+                                        <div class="home_btn">
+                                            <input type="submit" value="SUBMIT" class="btn btn-primary">
+                                        </div>
+    
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
