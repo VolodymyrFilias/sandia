@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=480, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/media.css" />
     
 </head>
 <body>
@@ -35,11 +37,13 @@
             <div class="create">
                 <h3>Створюємо: <span>бренди...</span> </h3> 
             </div>
-            <div class="home_btn ">
-                <a href="" class="btn">Детальніше</a>   
-            </div>
-            <div class="home_btn right">
-                <a href="" class="btn">Зв'язаватися</a>   
+            <div class="buttons">
+                <div class="home_btn">
+                    <a href="" class="btn">Детальніше</a>   
+                </div>
+                <div class="home_btn right">
+                    <a href="" class="btn">Зв'язаватися</a>   
+                </div>
             </div>
         </div>
         <ul class="down_menu">
@@ -90,7 +94,7 @@
         <div id="carouselExampleControls" class="carousel vert slide" data-ride="carousel" data-interval="false" >
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block " src="img/yablokov.jpg" alt="First slide">
+                    <img class="d-block " src="img/brand.jpg" alt="First slide">
                     <div class="carousel-caption">
                         <div class="carousel_box">
                             <h5>Брендинг</h5>
@@ -100,11 +104,21 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block " src="img/brand.jpg" alt="Second slide">
+                    <img class="d-block " src="img/site.jpg" alt="Second slide">
                     <div class="carousel-caption">
                         <div class="carousel_box">
-                            <h5>Брендинг</h5>
-                            <h1>01</h1>
+                            <h5>Веб-сайти</h5>
+                            <h1>02</h1>
+                            <a href="#">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block " src="img/yablokov.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <div class="carousel_box">
+                            <h5>Упакування</h5>
+                            <h1>03</h1>
                             <a href="#">Детальніше</a>
                         </div>
                     </div>
@@ -113,8 +127,8 @@
                     <img class="d-block " src="img/business.jpg" alt="Third slide">
                     <div class="carousel-caption">
                         <div class="carousel_box">
-                            <h5>Брендинг</h5>
-                            <h1>01</h1>
+                            <h5>Маркетинг</h5>
+                            <h1>04</h1>
                             <a href="#">Детальніше</a>
                         </div>
                     </div>
@@ -134,135 +148,211 @@
 </header>
 
 <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 ">
-                        <div class="head_title ">
-                            <h4>Ми робимо: </h4>
-
-                        </div>
-                    <div class="main_about_area sections ">
-                        <div class="row">
-                            <div class="col-sm-6 col-12">
-                                <div class="single_about">
-                                    <div class="single_about_title">
-                                        <h1>01</h1>
-                                        <h6>Брендинг</h6>
-                                    </div>
-                                    <div class="single_about_content">
-                                        <p>Брендинг — це ваш імідж та те, що відрізняє вашу компанію від інших.</p>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="single_about">
-                                    <div class="single_about_title">
-                                        <h1>02</h1>
-                                        <h6>Веб-сайти</h6>
-                                    </div>
-                                    <div class="single_about_content">
-                                        <p>Лице вашої компанії в інтернеті. Ми знаходимо рішення під вашу потребу. Швидко, якісно та розумно. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="single_about">
-                                    <div class="single_about_title">
-                                        <h1>03</h1>
-                                        <h6>Упаковання</h6>
-                                    </div>
-                                    <div class="single_about_content">
-                                        <p>Це коли ми вирішуємо що покладе покупець у кошик. Те чи дорого виглядає та чи викликає довіру. </p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                           
-                            <div class="col-sm-6 col-12">
-                                <div class="single_about">
-                                    <div class="single_about_title">
-                                        <h1>04</h1>
-                                        <h6>Маркетинг, просування</h6>
-                                    </div>
-                                    <div class="single_about_content">
-                                        <p>Ми добре розуміємо трнедти в інтернет-маркетингу. Комплексно вирішуємо проблеми компаній.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                    <div class="head_title ">
+                        <h4>Ми робимо: </h4>
                     </div>
+                <div class="main_about_area sections ">
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="single_about">
+                                <div class="single_about_title">
+                                    <h1>01</h1>
+                                    <h6>Брендинг</h6>
+                                </div>
+                                <div class="single_about_content">
+                                    <p>Брендинг — це ваш імідж та те, що відрізняє вашу компанію від інших.</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="single_about">
+                                <div class="single_about_title">
+                                    <h1>02</h1>
+                                    <h6>Веб-сайти</h6>
+                                </div>
+                                <div class="single_about_content">
+                                    <p>Лице вашої компанії в інтернеті. Ми знаходимо рішення під вашу потребу. Швидко, якісно та розумно. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="single_about">
+                                <div class="single_about_title">
+                                    <h1>03</h1>
+                                    <h6>Упаковання</h6>
+                                </div>
+                                <div class="single_about_content">
+                                    <p>Це коли ми вирішуємо що покладе покупець у кошик. Те чи дорого виглядає та чи викликає довіру. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12">
+                            <div class="single_about">
+                                <div class="single_about_title">
+                                    <h1>04</h1>
+                                    <h6>Маркетинг, просування</h6>
+                                </div>
+                                <div class="single_about_content">
+                                    <p>Ми добре розуміємо трнедти в інтернет-маркетингу. Комплексно вирішуємо проблеми компаній.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="works" class="works">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 ">
-                            <div class="head_title ">
-                                <h4>Останні проекти: </h4>
-    
-                            </div>
-                        <div class="main_works_area sections ">
-                            <div class="row">
-                                <div class="col-sm-12 col-12">
-                                    <div class="single_works">
-                                            <img src="img/goods1.jpg" alt="" />
-                                    
-                                            <img src="img/cukor.jpg" alt="" />
-                                    </div>
-                                </div>
+<section id="works" class="works">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                    <div class="head_title ">
+                        <h5>Останні проекти: </h5>
 
-                                <div class="col-sm-12 col-12">
-                                    <div class="single_work">
-                                            <img src="img/goods2.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="contact sections">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">                           
-                            <div class="col-sm-6">
-                                <h4>GIVE US A GOOD NEWS</h4>
-                                <div class="single_contant_left">
-                                    <form action="#" id="formid">
-                                        
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="first name" required="">
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                                        </div>
-    
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
-                                        </div>
-    
-                                        <div class="home_btn">
-                                            <input type="submit" value="SUBMIT" class="btn btn-primary">
-                                        </div>
-    
-                                    </form>
-                                </div>
+                <div class="main_works_area sections ">
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="single_works">
+                                    <img src="img/goods1.jpg" alt="" />
+                            
+                                    <img src="img/cukor.jpg" alt="" />
                             </div>
                         </div>
-                    </div>
+                        <div class="col-sm-12 col-12">
+                            <div class="single_work">
+                                <div class="head_title ">
+                                    <h5>Упакування The Goods: </h5>
+                                    <span>Айдентика, стікери, упакування, меню, візуалізація</span>
+                                    <a>Детальніше</a>
+                                </div>
+                                <img src="img/goods2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-12">
+                            <div class="head_title_center">
+                                    <a href="#">Показати більше проектів</a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact sections">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Контактні дані</h4>
+                <h6>Вже через хвилину ми почнем роботу <br>
+                     над вашим проектом</h6>
+                <div class="single_contant_left">
+                    <form action="#" id="formid">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Імя*" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Номер телефону*" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="E-mail" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="home_btn">
+                                    <input type="submit" value="Відправити" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="single_footer">
+                    <div class="single_footer_title">
+                        <h6>Sandia Studio</h6>
+                    </div>
+                    <div class="single_footer_content">
+                        <ul>
+                            <li><a href="">Львів, Україна</a></li>
+                            <li><a href="">+38 (093) 43-41-182</a></li>
+                            <li><a href="">contacts@sandia.studio</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="single_footer">
+                    <div class="single_footer_title">
+                        <h6>Послуги</h6>
+                    </div>
+                    <div class="single_footer_content">
+                        <ul>
+                            <li><a href="">Брендинг</a></li>
+                            <li><a href="">Розробка веб-сайтів</a></li>
+                            <li><a href="">Упакування</a></li>
+                            <li><a href="">Маркетинг,просування</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="single_footer">
+                    <div class="single_footer_title">
+                        <h6>Додатково</h6>
+                    </div>
+                    <div class="single_footer_content">
+                        <ul>
+                            <li><a href="">Про нас</a></li>
+                            <li><a href="">Усі проекти</a></li>
+                            <li><a href="">Отримати консультацію</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="single_footer">
+                    <div class="single_footer_title">
+                        <h6>Вакансії</h6>
+                    </div>
+                    <div class="single_footer_content">
+                        <ul>
+                            <li><a href="">Веб-дизайнер</a></li>
+                            <li><a href="">Верстальник</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="copyright_text">
+                    <p>SANDIA STUDIO © усі права зихищено 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
