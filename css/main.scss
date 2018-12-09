@@ -16,24 +16,27 @@ a:hover {
     color: black;
 }
 header{
+    display: flex;
+    justify-content: flex-start;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;        
+    height: 100vh;   
+    min-height: 500px;     
 }
 .header-left{
     width: 50%;
-    float: left;
     height: 100vh;
+    min-height: 500px;
 }
 .header-right{
     width: 50%;
-    float: right;
 }
 
 .top-line{
     font-family: 'Montserrat Medium';
     display: flex;
+    align-items: center;
     
 }
 .top-line nav{ 
@@ -41,10 +44,14 @@ header{
     margin: 0 calc(9vw - 70px);
 }
 .top-line-menu{
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
+    
+    a{
+        font-size: 13px;}
+    }
    
-}
+
 .top-line img{
     width: 120px;
     height: 40px;
@@ -56,7 +63,7 @@ ul{
 }
 
 .top-line li{
-    margin: 23px 0;
+    margin: 0;
     white-space: nowrap;
     font-weight:bold;
 }
@@ -129,6 +136,7 @@ ul{
 }
 .header-right img{
     height: 100vh;
+    min-height: 500px;
 }
 
 .vert .carousel-item-next.carousel-item-left,
@@ -149,13 +157,13 @@ ul{
         transform: translate3d(0,-100%, 0);
 }
 .carousel-control-next{
-    top: 70%;
+    top: 65%;
     left: 43%;
     opacity: 1;
     font-size: 40px;
 }
 .carousel-control-prev{
-    bottom: 70%;
+    top: 12%;
     left: 43%;
     opacity: 1;
 }
@@ -164,9 +172,17 @@ ul{
     font-weight: 100;
     font-size: 40px;
     background-color: #dcdcdc;
-    height: 45px;
-    width: 45px;
+    height: 53px;
+    width: 53px;
 
+}
+.carousel-control-next, .carousel-control-prev {
+    height: 20%;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+    padding: 4px;
 }
 .carousel-caption {
     font-family: 'Montserrat Medium';
@@ -189,6 +205,7 @@ ul{
 .carousel_box h1{
     font-size: 50px;
     margin-top: 40px;
+    color: #959595;
 }
 .carousel_box a{
     display: block;
@@ -208,6 +225,9 @@ ul{
 }
 .middle-menu {
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    max-height: 60vh;
      li {
     display: flex;
     width: 100%;
@@ -219,16 +239,37 @@ ul{
     padding: 10px;}
 }
 
+$primary: #000;
+$bar-length: 28px;
+$bar-thickness: 4px;
+nav {
+    .toggle-button {
+        &,
+        &:after {
+            width: $bar-length;
+            height: $bar-thickness;
+            background-color: $primary;
+            border-radius: $bar-thickness;
+            transition: 0.2s ease-in-out;
+        }
+        &:after {
+            transform: translateY(($bar-thickness*2)); }
+    }  
+}   
+   
+
+
+
 .toggle-button{
+    //font-family: 'Montserrat SemiBold';
     position: fixed;
     text-align: center;
     display: block;
     cursor: pointer;
-    margin:10px;
+    margin:30px 10px;
     font-size: 35px;
     font-weight: bold;
     left: 95%;
-    float: right;
     z-index: 1001;
     
 }
@@ -266,17 +307,18 @@ ul{
     z-index: 1000;
     height: 100vh;
     width: 50vw;
-    .middle-menu{
-        display: block;
-    }
+    
 }
 #menu-checkbox:checked + nav[role="navigation"] .carousel{
-display: none;
+    display: none;
 }
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button{
+    transform:translate3d(0,0,0) rotate(-45deg); }
 
 #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
     display: block;
     content: attr(data-close);
+    transform:translate3d(0,0,0) rotate(90deg);   
 }
 .about{
     background: #000;
@@ -330,7 +372,7 @@ display: none;
             padding: 0;}
         }
         
-        .single_work .head_title {
+        .head_title {
             position: absolute;
             height: 85%;
             margin: 6% 3%;
