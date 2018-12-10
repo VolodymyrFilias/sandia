@@ -48,7 +48,6 @@ header {
     font-size: 13px; }
 
 .top-line img {
-  width: 120px;
   height: 40px;
   margin: 15px 0 15px 30px; }
 
@@ -191,7 +190,6 @@ ul {
   margin-top: 50px; }
 
 .menu {
-  position: fixed;
   z-index: 1001; }
 
 #menu-checkbox {
@@ -225,7 +223,7 @@ nav .toggle-button:after {
   transform: translateY(8px); }
 
 .toggle-button {
-  position: fixed;
+  position: absolute;
   text-align: center;
   display: block;
   cursor: pointer;
@@ -241,7 +239,7 @@ nav .toggle-button:after {
 
 .opacity {
   display: block;
-  position: fixed;
+  position: absolute;
   width: 50vw;
   height: 100vh;
   margin-left: -50vw;
@@ -346,7 +344,7 @@ nav .toggle-button:after {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0 70px 0; }
-  .contact h4 {
+  .contact h5 {
     font-family: 'Montserrat Medium';
     padding: 10px 0; }
   .contact h6 {

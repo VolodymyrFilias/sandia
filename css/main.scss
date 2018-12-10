@@ -53,7 +53,6 @@ header{
    
 
 .top-line img{
-    width: 120px;
     height: 40px;
     margin: 15px 0 15px 30px;
 }
@@ -213,7 +212,6 @@ ul{
 
 }
 .menu{
-    position: fixed;
     z-index: 1001;
 }
 #menu-checkbox{
@@ -262,7 +260,7 @@ nav {
 
 .toggle-button{
     //font-family: 'Montserrat SemiBold';
-    position: fixed;
+    position: absolute;
     text-align: center;
     display: block;
     cursor: pointer;
@@ -279,7 +277,7 @@ nav {
 } 
 .opacity{
     display: block;
-    position: fixed;
+    position: absolute;
     width: 50vw;
     height: 100vh;
     margin-left: -50vw;
@@ -408,7 +406,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 70px 0;
-    h4{
+    h5{
         font-family: 'Montserrat Medium';
         padding: 10px 0;
     }

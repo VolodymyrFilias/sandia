@@ -65,6 +65,12 @@
 	.top-line-email .home_btn {
 		display: none; 
 	}
+	.menu{
+		position: fixed;
+	}
+	.toggle-button{
+		position: fixed;
+	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
