@@ -74,6 +74,106 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.top-line img {
+		margin: 15px 0 15px 20px;
+	}
+	.mid-line {
+		margin: 25vh 20px 10vh 20px;
+	}
+	.down_menu {
+		margin: 50px 20px;
+		position: static;
+	}
+	.buttons .home_btn.right {
+		display: none;
+	}
+	.mid-line h1 {
+		letter-spacing: 1px;
+		font-size: 21px;
+	}
+	.mid-line h5{
+		font-size: 15px;
+	}
+	.down_menu a{
+		font-size: 12.5px;
+	}
+	.toggle-button {
+		left: 80%;
+	}
+	.top-line-email .email {
+		margin: 20px 20px;
+	}
+	.middle-menu {
+		margin: 10px;
+	}
+	.about {
+		padding: 50px 0;
+	}
+	.about .single_about {
+		margin: 70px 20px 0 20px;
+		background-color: white;
+		padding: 10px;
+		color: black;
+		border-radius: 10px;
+	}
+	.about .single_about_content {
+		margin: 30px;
+	}
+	.works .main_works_area .single_works  {
+		display: block;
+	}
+	.works .main_works_area .single_works img {
+		width: 100%;
+	}
+	.works .main_works_area .single_works .none{
+		display: none;
+	}
+	.works .main_works_area .head_title_center {
+		display: none;
+	}
+	.works .head_title.phone {
+		display: block!important;
+		margin: 30px;
+	}    
+	.works .main_works_area .head_title, .works .main_works_area .head_title a {
+		position: static; 
+	}
+	.works .main_works_area .col-12{
+		padding: 0;
+	}
+	.about .single_about .single_about_title h1 {
+		display: none;
+	}
+	.about .single_about .single_about_title {
+		text-align: center;
+		display: block;
+	}
+	.about .single_about .single_about_content a {
+		display: block;
+		text-align: center
+	}
+	.about .single_about .single_about_title h6 {
+		margin: 10px;
+	}
+	.about .single_about_content {
+		margin: 30px 20px 10px 20px;
+	}
+	.contact {
+		padding: 40px 0;
+	}
+	.footer .col-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.footer {
+		padding: 60px 30px 30px 30px;
+	}
+	.footer .copyright_text {
+		margin-top: 20px;
+		font-size: 9px;
+	}
+	
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
