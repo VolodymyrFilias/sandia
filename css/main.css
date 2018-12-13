@@ -119,6 +119,7 @@ ul {
   white-space: nowrap; }
 
 .header-right img {
+  margin-left: calc((50vw - 133.3vh)/2);
   height: 100vh;
   min-height: 400px; }
 
@@ -225,15 +226,21 @@ nav .toggle-button, nav .toggle-button:after {
 nav .toggle-button:after {
   transform: translateY(8px); }
 
-.toggle-button {
+.toggle-button-box {
   position: absolute;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 0px;
+  left: 95%;
+  padding: 20px 10px;
+  z-index: 1001; }
+
+.toggle-button {
   text-align: center;
   display: block;
   cursor: pointer;
-  margin: 30px 10px;
   font-size: 35px;
   font-weight: bold;
-  left: 95%;
   z-index: 1001; }
 
 .toggle-button:after {

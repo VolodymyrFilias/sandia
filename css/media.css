@@ -17,7 +17,7 @@
 	#menu-checkbox:checked + nav[role="navigation"] .main-menu{
 		width: 100vw;	
 	}
-	.toggle-button{
+	.toggle-button-box{
 		left: 90%;
 	}
 	.header-left {
@@ -68,7 +68,7 @@
 	.menu{
 		position: fixed;
 	}
-	.toggle-button{
+	.toggle-button-box{
 		position: fixed;
 	}
 }
@@ -97,7 +97,7 @@
 	.down_menu a{
 		font-size: 12.5px;
 	}
-	.toggle-button {
+	.toggle-button-box {
 		left: 80%;
 	}
 	.top-line-email .email {
