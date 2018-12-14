@@ -93,7 +93,9 @@ ul{
     display: table;
     clear: both;
 }
-
+.btn:focus{
+    box-shadow: none;
+}
 .home_btn input, .home_btn a{
     font-family: 'Montserrat SemiBold';
     display: inline-block;
@@ -108,7 +110,7 @@ ul{
     transition: 0s;
     color: white;
     background: linear-gradient(to right, #d625e4, #fc42c5 ) ;
-    
+ 
 }
  .right a{
     background: #fff;
@@ -240,6 +242,7 @@ ul{
     font-size: 21px;
     padding: 10px;}
 }
+
 
 $primary: #000;
 $bar-length: 28px;
@@ -397,6 +400,9 @@ nav {
                 position: absolute;
                 bottom: 0;
             }
+            a:hover{
+                color: #a013af;
+            }
          }
         
         .single_work{
@@ -411,9 +417,11 @@ nav {
             text-align: center;
             margin: 50px 0;}
             a {
-                font-size: 21px;
-                
+                font-size: 21px; 
                 color: #db2bde;
+            }
+            a:hover{
+                color: #a013af;
             }
         }
 }
@@ -447,6 +455,7 @@ nav {
         border-bottom: 2px solid #a5a5a5;
         border-radius: 0;
         background-color: transparent;
+        box-shadow: none;
     }
          
     

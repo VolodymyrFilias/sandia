@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $("#applicationButton").bind("click", function () {
         const xhttp = new XMLHttpRequest();
-        const botToken = "742595177:AAHiYKdIWD4mTo45ok--mpOLsGc1wZ3KIWI";
-        const chatId = "436669711";
+        const botToken = "607809653:AAFDFWG1y0-hgb5f1QcXq9fh9qlyf_eqeG0";
+        const chatId = "-184963404";
 
         let messageText = "";
         let phoneNumber = $("#uPhoneInput").val();

@@ -84,6 +84,9 @@ ul {
   display: table;
   clear: both; }
 
+.btn:focus {
+  box-shadow: none; }
+
 .home_btn input, .home_btn a {
   font-family: 'Montserrat SemiBold';
   display: inline-block;
@@ -342,6 +345,8 @@ nav .toggle-button:after {
         color: #db2bde;
         position: absolute;
         bottom: 0; }
+      .works .main_works_area .head_title a:hover {
+        color: #a013af; }
     .works .main_works_area .single_work .head_title.phone {
       display: none; }
     .works .main_works_area .single_work img {
@@ -353,6 +358,8 @@ nav .toggle-button:after {
     .works .main_works_area a {
       font-size: 21px;
       color: #db2bde; }
+    .works .main_works_area a:hover {
+      color: #a013af; }
 
 .contact {
   background: #f3f5f6;
@@ -378,7 +385,8 @@ nav .toggle-button:after {
     border: none;
     border-bottom: 2px solid #a5a5a5;
     border-radius: 0;
-    background-color: transparent; }
+    background-color: transparent;
+    box-shadow: none; }
 
 .footer {
   background: #000;
