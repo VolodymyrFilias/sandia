@@ -25,11 +25,15 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;   
-    min-height: 400px;
+    min-height: 600px;
 }
 .header-left{
     width: 50%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+
 }
 .header-right{
     width: 50%;
@@ -72,11 +76,11 @@ ul{
     color: #282828;
     position: relative;
 }
-.top-line a:hover::after {
+.top-line-menu a:hover::after {
     opacity: 1;
     bottom: -1px;
 }
-.top-line a:after{
+.top-line-menu a:after{
     content: '';
     position: absolute;
     left: 0;
@@ -89,10 +93,9 @@ ul{
     transition: all 0.3s ease;
 }
 
-
-
 .mid-line {
-    margin: 20vh 50px;
+    margin: 20vh 50px 0 50px;
+    flex:9;
 }
 .mid-line h1{
     font-family: 'Montserrat Medium';
@@ -130,11 +133,11 @@ ul{
     margin: 20px 20px 20px 0px;
     font-size: 13px;
     border-radius: 30px;
-    transition: 0s;
     color: white;
     border: 2px solid transparent;
     background: linear-gradient(to right, #d625e4, #fc42c5 ) ;
-    transition: 0.4s ease-in-out;
+    background-color: #fc42c5;
+    transition: 1s ease-out;
 }
  .right a{
     border: 2px solid #ef3fca;
@@ -145,6 +148,7 @@ ul{
 .home_btn input:hover, .home_btn a:hover{
     background: #a013af;
     color: #fff;
+    border: 2px solid transparent;
 }
 .right a:hover{
     background: #fff;
@@ -154,15 +158,14 @@ ul{
 
 
 .down_menu {
-    position: absolute;
-    bottom: 0;
     margin: 50px 50px;
-    white-space: nowrap  
+    white-space: nowrap;  
+    flex: .5;
 }
 .header-right img{
     margin-left: calc((50vw - 133.3vh)/2);
     height: 100vh;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .vert .carousel-item-next.carousel-item-left,
@@ -256,7 +259,7 @@ ul{
     margin: 40px;
     display: flex;
     flex-direction: column;
-    max-height: 60vh;
+    flex: 9;
      li {
     display: flex;
     width: 100%;
@@ -337,7 +340,10 @@ nav {
     position: absolute;
     z-index: 1000;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    min-height: 600px;
     
 }
 #menu-checkbox:checked + nav[role="navigation"] .carousel{
