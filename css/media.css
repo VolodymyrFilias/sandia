@@ -125,9 +125,6 @@
 	.works .main_works_area .single_works img {
 		width: 100%;
 	}
-	.works .main_works_area .single_works .none{
-		display: none;
-	}
 	.works .main_works_area .head_title_center {
 		display: none;
 	}
@@ -172,6 +169,9 @@
 	.footer .copyright_text {
 		margin-top: 20px;
 		font-size: 9px;
+	}
+	.none_for_phone{
+		display: none;
 	}
 	
 }
