@@ -6,7 +6,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Montserrat Regular', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
 
 li {
   list-style: none; }
@@ -38,7 +40,9 @@ header {
   width: 50%; }
 
 .top-line {
-  font-family: 'Montserrat Medium';
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   align-items: center; }
 
@@ -89,13 +93,17 @@ ul {
   flex: 9; }
 
 .mid-line h1 {
-  font-family: 'Montserrat Medium';
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
   letter-spacing: 3px; }
 
 .mid-line .create {
   color: gray;
   margin: 20px 0;
-  font-family: 'Montserrat Medium'; }
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal; }
 
 .mid-line .create span {
   color: #d524e5; }
@@ -113,7 +121,9 @@ ul {
 
 .home_btn input, .home_btn a {
   border: none;
-  font-family: 'Montserrat SemiBold';
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
   display: inline-block;
   min-width: 150px;
   padding: 0.8em;
@@ -180,8 +190,9 @@ ul {
   opacity: 1; }
 
 .header-right .fa {
-  font-family: 'Montserrat Medium';
-  font-weight: 100;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
   font-size: 40px;
   background-color: #dcdcdc;
   height: 53px;
@@ -196,7 +207,9 @@ ul {
 
 .carousel-caption {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat Medium';
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
   background-color: #fff;
   color: #000;
   height: 230px;
@@ -242,7 +255,9 @@ ul {
     width: 100%;
     text-align: center; }
   .middle-menu a {
-    font-family: 'Montserrat Medium';
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
     display: block;
     font-size: 21px;
     padding: 10px; }
@@ -291,7 +306,9 @@ nav .toggle-button:after {
   .top-line-email .email {
     margin: 20px 50px; }
     .top-line-email .email a {
-      font-family: 'Montserrat Medium'; }
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-style: normal; }
     .top-line-email .email span {
       font-size: 12.5px;
       display: block; }
@@ -326,11 +343,15 @@ nav .toggle-button:after {
   color: #fff;
   padding: 80px 0; }
   .about .head_title {
-    font-family: 'Montserrat SemiBold'; }
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal; }
   .about .single_about {
     margin-top: 70px; }
     .about .single_about .single_about_title {
-      font-family: 'Montserrat Medium';
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-style: normal;
       display: flex; }
       .about .single_about .single_about_title h1 {
         width: 53px; }
@@ -351,7 +372,9 @@ nav .toggle-button:after {
   color: #000;
   padding-top: 80px; }
   .works .head_title h5 {
-    font-family: 'Montserrat SemiBold'; }
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal; }
   .works .main_works_area {
     margin-top: 60px; }
     .works .main_works_area .single_works {
@@ -382,7 +405,9 @@ nav .toggle-button:after {
     .works .main_works_area .single_work img {
       width: 100%; }
     .works .main_works_area .head_title_center {
-      font-family: 'Montserrat Medium';
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-style: normal;
       text-align: center;
       margin: 50px 0; }
     .works .main_works_area a {
@@ -398,10 +423,14 @@ nav .toggle-button:after {
   background-size: cover;
   padding: 80px 0 70px 0; }
   .contact h5 {
-    font-family: 'Montserrat Medium';
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
     padding: 10px 0; }
   .contact h6 {
-    font-family: 'Montserrat Medium';
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
     padding: 3px;
     color: #909090; }
   .contact form {
@@ -410,7 +439,9 @@ nav .toggle-button:after {
     .contact form .home_btn {
       padding-top: 25px; }
   .contact .form-control {
-    font-family: 'Montserrat SemiBold';
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
     color: #919191;
     border: none;
     border-bottom: 2px solid #a5a5a5;
@@ -426,7 +457,9 @@ nav .toggle-button:after {
   color: #fff;
   padding: 70px 0; }
   .footer h6 {
-    font-family: 'Montserrat SemiBold';
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
     font-size: 17px;
     padding-bottom: 0.5em; }
   .footer ul {
@@ -437,7 +470,9 @@ nav .toggle-button:after {
       color: #848484;
       font-size: 15px; }
   .footer .copyright_text {
-    font-family: 'Montserrat SemiBold';
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
     color: #848484;
     bottom: 0;
     margin-top: 50px; }
