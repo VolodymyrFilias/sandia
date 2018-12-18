@@ -86,3 +86,9 @@ function tick() {
 }
 
 var timeout = window.setTimeout(tick, delay);
+
+
+
+$( ".middle-menu" ).on ("click",function() {
+    $( ".toggle-button-box" ).trigger('click');
+  });
